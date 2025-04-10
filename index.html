@@ -8,7 +8,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: white;
+      background-color: #f1eadd;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -17,8 +17,10 @@
 
     img {
       opacity: 0;
-      transform: scale(2);
-      animation: fadeIn 2s ease-out forwards;
+      transform: scale(0.95);
+      animation: fadeIn 1.2s ease-out forwards;
+      width: 400px; /* větší logo */
+      max-width: 90vw; /* aby se nezvětšovalo přes okraj na mobilech */
     }
 
     @keyframes fadeIn {
@@ -30,6 +32,6 @@
   </style>
 </head>
 <body>
-  <img src="mourtech.png" alt="Logo" width="200">
+  <img src="logo.png" alt="Logo Mourtech">
 </body>
 </html>
